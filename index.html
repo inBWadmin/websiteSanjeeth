@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InBlacknWhite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3rdparty/swiper-bundle.min.css" />
+    <script src="3rdparty/swiper-bundle.min.js"></script>
+    <link href="3rdparty/bootstrap.min.css" rel="stylesheet">
+    <script src="3rdparty/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="main">
+    <nav class="fixed-top navbar-container navbar navbar-expand-lg navbar-dark">
+        <div class="container-md">
+            <div class="navbar-brand">
+                <img class="logo" src="images/inBW.Logo.v2.1.jpg" alt="InBlacknWhite Logo" />
+                <span class="company-name">In Black & White</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <video autoplay muted loop controls>
+                <source src="Final_edit_ani.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="product" class="product-section">
+        <div class="container">
+            <h2>Product</h2>
+            <div class="innovation-cards">
+                <div class="card kadambari-card">
+                    <div class="card-title">
+                        <h3>kAdaMbari</h3>
+                        <p>Focusing on incorporation, credit rating, legal</p>
+                    </div>
+                    <div class="card-details">
+                        <ul>
+                            <li>Over 70 thousand entities</li>
+                            <li>Over 6 lakh rationales</li>
+                            <li>Over 7 lakh judgements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card kosh-card">
+                    <div class="card-title">
+                        <h3>kosh</h3>
+                        <p>Focusing on corporate debt</p>
+                    </div>
+                    <div class="card-details">
+                        <ul>
+                            <li>Over 4 thousand issuers</li>
+                            <li>Over 30 thousand ISINs</li>
+                            <li>Over 6 lakh trades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits"> <!-- Added "benefits" id to this section -->
+        <div class="container">
+            <h2 class="benefits-header">Benefits</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Add a subheading.png" height="100%" width="100%" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Add a subheading (1).png" height="100%" width="100%" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Add a subheading (2).png" height="100%" width="100%" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Add a subheading (3).png" height="100%" width="100%" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="footer-contact" class="contact">
+                <h3>Contact</h3>
+                <p>Phone: +91 99862 23172</p>
+                <p>Email: admin@inbw.co.in</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: false,
+            effect: "cards",
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+                enabled: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

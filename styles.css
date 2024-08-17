@@ -1,0 +1,261 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar-container {
+    background-color: black;
+    z-index: 100;
+}
+
+/* Header styles */
+header {
+    background: #000;
+    color: #fff;
+    /* padding: 0.2rem 0; */
+    /* Reduced padding to make the header smaller */
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    /*
+    top: 0;
+    z-index: 1000; */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 16px;
+}
+
+.logo {
+    max-width: 60px;
+}
+
+header .company-name {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Ensure the navigation fills the header's height */
+}
+
+header nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+header nav {
+    align-items: center;
+    /* Centers the navigation vertically */
+    display: flex;
+}
+
+/* Hero section styles */
+section {
+    padding: 5rem 0;
+}
+
+.main {
+    margin-top: 60px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: white;
+}
+
+#hero {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#hero .video-container {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+#hero video {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Product section styles */
+#product {
+    background: #000;
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+.benefits-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.innovation-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.swiper {
+    height: 300px;
+    width: 600px;
+    cursor: grab;
+}
+
+.swiper:active {
+    cursor: grabbing;
+}
+
+.swiper-slide {
+    border-radius: 43px;
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 0;
+    max-width: 450px;
+    min-height: 250px;
+    border: 2px solid #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-details {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-top: 2px solid #fff;
+}
+
+/* Your Benefits section */
+#your-benefits {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#your-benefits p {
+    margin: 1rem 0;
+}
+
+/* Contact section styles */
+#contact {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+/* Footer styles */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .contact {
+    margin: 10px 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    #product .card {
+        flex: 1 1 100%;
+    }
+
+    .swiper {
+        height: 50%;
+        width: 100%;
+    }
+}
